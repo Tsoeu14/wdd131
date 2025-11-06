@@ -1,0 +1,38 @@
+body{
+    display: grid;
+    grid-template-rows: 1fr;
+    background-color: pink;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: burlywood;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+header span{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+header nav{
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a:hover { 
+    border: 1px solid white;
+
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
