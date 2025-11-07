@@ -1,12 +1,12 @@
 body{
     display: grid;
     grid-template-rows: 1fr;
-    background-color: pink;
+    background-color: wheat;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header{
-    background-color: burlywood;
+    background-color: gray;
     display: grid;
     grid-template-rows: 2fr 1fr;
 }
@@ -14,15 +14,18 @@ header{
 header span{
     display: block;
     text-align: center;
-    text-decoration: none;
+    text-decoration: bold;
     padding: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
 }
 
 header nav{
-    background-color: black;
+    background-color: whitesmoke;
     color: aliceblue;
     display: flex;
     justify-content: space-evenly;
+    padding: 1rem;
 }
 
 nav a:hover { 
@@ -30,9 +33,54 @@ nav a:hover {
 
 }
 
+.side{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+section{
+    flex: 1 1 300px;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    background-color: antiquewhite;
+    box-shadow: 0 2px 5px rgba(red, green, blue, alpha);
+    display: grid;
+    grid-column: 2fr 1fr;
+    background-color: azure;
+}
+
+h2{
+    display: block;
+    text-align: center;
+    background-color: pink;
+    padding: 1rem;
+}
+
+.around img{
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+h3{
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
 .card{
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
+    grid-column: 2fr 1fr;
+    background-color: azure;
+}
+footer{
+    display: block;
+    text-align: center;
+    background-color: grey;
+    padding: 1rem;
 }
 
