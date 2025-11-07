@@ -32,6 +32,10 @@ nav a:hover {
     border: 1px solid white;
 
 }
+main{
+    padding: 1rem;
+    margin: 1rem;
+}
 
 .side{
     display: flex;
@@ -48,9 +52,6 @@ section{
     padding: 20px;
     background-color: antiquewhite;
     box-shadow: 0 2px 5px rgba(red, green, blue, alpha);
-    display: grid;
-    grid-column: 2fr 1fr;
-    background-color: azure;
 }
 
 h2{
