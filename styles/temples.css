@@ -1,0 +1,26 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+ header{
+    display: block;
+    background-color: green;
+    color: #ffff;
+    font-family: monospace;
+    padding: 10px;
+    font-size: large;
+ }
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: justify;
+}
+
+footer {
+    display: block;
+    background-color: green;
+    color: #ffff;
+    text-align: center;
+    padding: 1rem;
+}
