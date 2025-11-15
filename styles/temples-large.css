@@ -11,7 +11,7 @@
         padding: 20px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-    #menu{
+    nav{
         display: flex;
         justify-content: space-between;
         gap: 20px;
