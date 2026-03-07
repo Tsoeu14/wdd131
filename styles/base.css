@@ -1,0 +1,36 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+.course-title{
+    background-color: pink;
+    color: #ffff;
+    font-weight: 100;
+}
+h1 {
+    font-weight: 100;
+    font-family: "Playfair Display", serif;
+}
+header span{
+    display: block;
+    text-align: center;
+}
+header nav{
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+header nav a:hover{
+    border: 1px solid #ffff;
+}
+main{
+    max-width: 800px;
+    align-items: center;
+}
+section{
+    display:grid;
+}
+.card{
+    grid-template-columns: 1/4;
+    grid-template-rows: 1/3;
+}
