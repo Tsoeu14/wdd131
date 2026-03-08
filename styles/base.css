@@ -1,4 +1,4 @@
-*{margin: 0;
+*{ margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     }
@@ -31,13 +31,52 @@ header nav a:hover{
     color: yellowgreen;
     text-decoration: none;
 }
-main{
-    display: grid;
-    padding: 16px;
-    margin: 10px;
-    gap: 12px;
+main h1{
+    text-align: center;
 }
-
+.side{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.card{
+    padding: 20px;
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+h2{
+    display: block;
+    background-color: palevioletred;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #ffff;
+}
+.floating{
+    display: flex;
+    padding: 10px 15px;
+    gap: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.wrap{
+    display: block;
+    float: right;
+    width: 100%;
+    object-fit: cover;
+    max-width: 200px;
+    vertical-align: middle;
+}
+.wrap2{
+    flex: 1;
+}
+h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
 footer{
     background-color: palevioletred;
     color: white;
