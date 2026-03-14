@@ -4,7 +4,7 @@
     }
 body {
     font-family: cursive;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 header span{
@@ -19,6 +19,7 @@ header nav {
     justify-content: space-evenly;
     background-color: gray;
     padding: 10px;
+    font-weight: 300;
 }
 header nav a{
     text-decoration: none;
@@ -45,8 +46,10 @@ h2{
     color: white;
 }
 .card{
+    display: block;
     background-color: grey;
     padding: 20px;
+    border-radius: 2px solid grey;
 }
 footer{
     background-color: #7f1805;
