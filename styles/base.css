@@ -1,84 +1,55 @@
-*{ margin: 0 auto;
+*{ margin: 0;
     padding: 0;
     box-sizing: border-box;
     }
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: cursive;
     font-weight: 400;
 }
-h1 {
-    font-weight: 100;
-    font-family: "Playfair Display", serif;
-    text-align: center;
-}
+
 header span{
     display: block;
     text-align: center;
-    background-color: palevioletred;
-    color: #ffff;
-    font-weight: 1000;
+    background-color: #7f1805;
+    color: white;
     padding: 20px;
 }
-header nav{
+header nav {
     display: flex;
-    justify-content: space-around;
-    text-decoration: none;
+    justify-content: space-evenly;
     background-color: gray;
-    padding: 16px;
+    padding: 10px;
+}
+header nav a{
+    text-decoration: none;
+    color: black;
 }
 header nav a:hover{
-    border: 1px solid #ffff;
-    color: yellowgreen;
-    text-decoration: none;
+    color: greenyellow;
 }
-main h1{
-    text-align: center;
+main{
+    max-width: 1500px;
+    align-items: center;
 }
-.side{
+.layout{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 10px;
-    max-width: 1300px;
-    margin: 0 auto;
-}
-.card{
+    gap: 20px;
     padding: 20px;
-    border: 3px solid gray;
-    border-radius: 10px;
+}
+h1{
+    text-align: center;
 }
 h2{
-    display: block;
-    background-color: palevioletred;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    color: #ffff;
+    background-color: #7f1805;
+    color: white;
 }
-.floating{
-    display: flex;
-    padding: 10px 15px;
-    gap: 5px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.wrap{
-    display: block;
-    float: right;
-    width: 100%;
-    object-fit: cover;
-    max-width: 200px;
-    vertical-align: middle;
-}
-.wrap2{
-    flex: 1;
-}
-h3{
-    text-align: center;
-    margin-bottom: 20px;
+.card{
+    background-color: grey;
+    padding: 20px;
 }
 footer{
-    background-color: palevioletred;
+    background-color: #7f1805;
     color: white;
     text-align: center;
     padding: 16px;

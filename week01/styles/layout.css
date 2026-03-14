@@ -22,7 +22,7 @@ h1{
 }
 main{
     grid-column: 1/2;
-    background-color: blue;
+    background-color: #db70bf;
     padding: 10px;
 }
 aside{
