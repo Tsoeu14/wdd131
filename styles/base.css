@@ -3,8 +3,11 @@
     box-sizing: border-box;
     }
 body {
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
+}
+header{
+    display: block;
 }
 
 header span{
@@ -49,7 +52,6 @@ h2{
     display: block;
     background-color: grey;
     padding: 20px;
-    border-radius: 2px solid grey;
 }
 footer{
     background-color: #7f1805;
