@@ -18,7 +18,7 @@ header p{
 #hamburger {
     background: none;
     border: none;
-    font-size: 1.8rem;
+    font-size: 2rem;
     cursor: pointer;
     color: #ffff;
 }
@@ -30,7 +30,6 @@ header p{
 }
 
 #menu a{
-    font-weight: 500;
     text-decoration: none;
     color: #ffff;
 }
