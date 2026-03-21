@@ -1,55 +1,18 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 800px) {
     #hamburger {
         display: none;
     }
 
-    /* header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #7f1805;
-        color: #ffff;
-        padding: 20px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    } */
-
-    /* nav {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-    } */
-
-    /* #menu a {
-        text-decoration: none;
-        color: #ffff;
-        font-weight: 5rem;
-        padding: 25px;
-    } */
-
-    /* #menu a:hover {
-        text-decoration: wavy;
-    } */
-
-    /* main {
-        width: 100%;
-        align-content: center;
-    }
-
-    main h1 {
-        text-align: center;
-    } */
     #menu{
         display: flex;
         flex-direction: row;
         gap: 20px;
     }
     .container {
-        
-        /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-        /* grid-template-rows: repeat(auto-fit, minmax(200px, 1fr)); */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
         grid-template-columns: repeat(3, 1fr);
-        /* grid-template-rows: repeat(3, 1fr); */
-        
+        grid-template-rows: repeat(3, 1fr);
     }
     
 }
