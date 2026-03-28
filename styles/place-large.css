@@ -1,0 +1,26 @@
+@media screen and (min-width: 800px){
+    .container{
+        position: relative;
+        height: 500px;
+        background-image: url("C: \Users\Hlally\Documents\DOCUMENTS FOR SCHOOL\wdd131\images\naha.webp");
+        background-color: aqua;
+        background-size: cover;
+        background-position: center;
+    }
+    .container img{
+        display: none;
+    }
+    .hero{
+        position: absolute;
+        width: 300px;
+        background-color: seashell;
+    }
+    .data{
+        top: 40px;
+        left: 40px;
+    }
+    .weather{
+        bottom: 40px;
+        right: 40px;
+    }
+}
