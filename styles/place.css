@@ -3,12 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --primary-color: navy;
+    --secondary-color: rgb(9, 156, 9);
+    --back-color: seashell;
+
+}
 body{
     font-family: 'Arial', sans-serif;
     background-color: rgb(255, 255, 255);
 }
 header{
-    background-color: navy;
+    background-color: var(--primary-color);
     color: white;
     padding: 20px;
     text-align: center;
@@ -19,18 +25,33 @@ p{
 .container img{
     display: block;
     width: 100%;
+
 }
 .hero{
     margin: 20px;
     padding: 1rem;
-    background-color: seashell;
+    background-color: var(--back-color);
     border-radius: 7px;  
+}
+.data h2{
+    display: block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+.weather h2 {
+    display: block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 15px;
+    text-align: center;
 }
 .big-view{
     display: none;
 }
 footer{
-    background-color: rgb(9, 156, 9);
+    background-color: var(--secondary-color);
     color: white;
     padding: 10px;
     text-align: center;
