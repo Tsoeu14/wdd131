@@ -64,10 +64,6 @@ nav {
     margin: 1rem;
 }
 
-h1 {
-    text-align: center;
-}
-
 main {
     max-width: 850px;
     align-content: center;
@@ -95,11 +91,7 @@ main {
     background-color: grey;
 
 }
-figcaption {
-    text-align: center;
-    font-weight: 200;
-    margin-top: 5px;
-}
+
 
 footer {
     background-color: #7f1805;

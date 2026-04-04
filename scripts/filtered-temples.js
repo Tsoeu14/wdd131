@@ -3,6 +3,7 @@ document.getElementById("lastModified").textContent = document.lastModified;
 
 const hamburger = document.getElementById("hamburger");
 const menu = document.getElementById("menu");
+
 hamburger.addEventListener("click", () => {
     menu.classList.toggle("open");
     if (menu.classList.contains("open")) {
@@ -96,9 +97,11 @@ const temples = [
     
 ];
  
-makeTempleCards();
-function makeTempleCards() {
-    temples.forEach(temple => {
+function makeTempleCards(templeList){
+    const container = document.querySelector("#container");
+    container.innerHTML = "";
+
+    templeList.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
@@ -110,16 +113,39 @@ function makeTempleCards() {
         location.textContent = `Location: ${temple.location}`;
         dedicated.textContent = `Dedicated: ${temple.dedicated}`;
         area.textContent = `Area: ${temple.area} sq ft`;
-        image.setAttribute("src", temple.imageUrl);
-        image.setAttribute("alt", `${temple.templeName} image`);
-        image.setAttribute("loading", "lazy");
 
-        card.appendChild(name); 
-        card.appendChild(location);
-        card.appendChild(dedicated);
-        card.appendChild(area);
-        card.appendChild(image);    
+        image.src = temple.imageUrl;
+        image.alt = `${temple.templeName} image`;
+        image.loading = "lazy";
 
-        document.querySelector("#container").appendChild(card);
+        card.append(name, location, dedicated, area, image);
+        container.appendChild(card);
     });
+ }
+
+function oldTemples() {
+    const filtered = temples.filter(t => parseInt(t.dedicated) < 1900);
+    makeTempleCards(filtered);
 }
+function newTemples() {
+    const filtered = temples.filter(t => parseInt(t.dedicated) > 2000);
+    makeTempleCards(filtered);
+}       
+function largeTemples() {
+    const filtered = temples.filter(t => t.area > 90000);
+    makeTempleCards(filtered);
+}       
+function smallTemples() {
+    const filtered = temples.filter(t => t.area < 10000);
+    makeTempleCards(filtered);
+}
+function homeTemples() {
+    makeTempleCards(temples);
+}
+document.getElementById("home")?.addEventListener("click", homeTemples);
+document.getElementById("old")?.addEventListener("click", oldTemples);
+document.getElementById("new")?.addEventListener("click", newTemples);
+document.getElementById("large")?.addEventListener("click", largeTemples);
+document.getElementById("small")?.addEventListener("click", smallTemples);
+
+makeTempleCards(temples);
